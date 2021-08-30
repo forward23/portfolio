@@ -33,8 +33,7 @@
 
 <header class="navigation fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand font-tertiary h3" href="index.html"><img src="{% static 'images/logo.png' %}"
-                                                                        alt="Myself"></a>
+        <a class="navbar-brand font-tertiary h5" href="index.html">#ILYA MOISEEV</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                 aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,19 +42,25 @@
         <div class="collapse navbar-collapse text-center" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="#parallax">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
+                    <a class="nav-link" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
+                    <a class="nav-link" href="#experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="#education">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -67,7 +72,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-11 mx-auto">
-                <h1 class="text-white font-tertiary">Hi! I’m <br> Moiseev Ilya <br> # python developer <br> # data
+                <h1 class="text-white font-tertiary">Hi! I’m <br> Ilya Moiseev <br> # python developer <br> # data
                     analyst</h1>
             </div>
         </div>
@@ -115,12 +120,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 mx-auto text-center">
-                <p class="font-secondary paragraph-lg text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p class="font-secondary paragraph-lg text-dark">Hey! I am a tenacious self-taught programmer. For the
+                    last 4 years I have been doing data analysis in a Forex company, and also writing web applications
+                    with Django (Python).
+                    <br>
+                    I also have strong knowledge in trading on the Stock Exchange and Forex. Own experience: 7 years on
+                    the Moscow Exchange (stocks, futures, options) and on Forex.</p>
                 <a href="about.html" class="btn btn-transparent">know more</a>
             </div>
         </div>
@@ -129,7 +134,7 @@
 <!-- /about -->
 
 <!-- skills -->
-<section class="section">
+<section class="section" id="skills">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -216,7 +221,7 @@
 <!-- /skills -->
 
 <!-- experience -->
-<section class="section">
+<section class="section" id="experience">
     <div class="container">
         <div class="row justify-content-around">
             <div class="col-lg-12 text-center">
@@ -246,7 +251,7 @@
 <!-- ./experience -->
 
 <!-- education -->
-<section class="section position-relative">
+<section class="section position-relative" id="education">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -332,7 +337,7 @@
 <!-- /education -->
 
 <!-- services -->
-<section class="section">
+<section class="section" id="services">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -374,7 +379,7 @@
 <!-- /services -->
 
 <!-- portfolio -->
-<section class="section">
+<section class="section" id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -384,235 +389,238 @@
         <div class="row shuffle-wrapper">
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{% static 'images/portfolio/item-1.png' %}" alt="portfolio-image"
+                    <img src="{% static 'images/portfolio/blog.jpg' %}" alt="portfolio-image"
                          class="img-fluid rounded w-100">
                     <div class="hover-overlay">
                         <div class="hover-content">
-                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                            <a class="btn btn-light btn-sm" href="https://fierce-badlands-03824.herokuapp.com">view
+                                project</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{% static 'images/portfolio/item-2.png' %}" alt="portfolio-image"
+                    <img src="{% static 'images/portfolio/weather.png' %}" alt="portfolio-image"
                          class="img-fluid rounded w-100">
                     <div class="hover-overlay">
                         <div class="hover-content">
-                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                            <a class="btn btn-light btn-sm" href="https://warm-lowlands-65537.herokuapp.com">view
+                                project</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-6 mb-4 shuffle-item">
                 <div class="position-relative rounded hover-wrapper">
-                    <img src="{% static 'images/portfolio/item-3.png' %}" alt="portfolio-image"
+                    <img src="{% static 'images/portfolio/todo.png' %}" alt="portfolio-image"
                          class="img-fluid rounded w-100">
                     <div class="hover-overlay">
                         <div class="hover-content">
-                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
+                            <a class="btn btn-light btn-sm" href="https://ancient-brook-26133.herokuapp.com">view
+                                project</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-6 mb-4 shuffle-item">
-                <div class="position-relative rounded hover-wrapper">
-                    <img src="{% static 'images/portfolio/item-4.png' %}" alt="portfolio-image"
-                         class="img-fluid rounded w-100">
-                    <div class="hover-overlay">
-                        <div class="hover-content">
-                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-6 mb-4 shuffle-item">
-                <div class="position-relative rounded hover-wrapper">
-                    <img src="{% static 'images/portfolio/item-5.png' %}" alt="portfolio-image"
-                         class="img-fluid rounded w-100">
-                    <div class="hover-overlay">
-                        <div class="hover-content">
-                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {#            <div class="col-lg-4 col-6 mb-4 shuffle-item">#}
+            {#                <div class="position-relative rounded hover-wrapper">#}
+            {#                    <img src="{% static 'images/portfolio/item-4.png' %}" alt="portfolio-image"#}
+            {#                         class="img-fluid rounded w-100">#}
+            {#                    <div class="hover-overlay">#}
+            {#                        <div class="hover-content">#}
+            {#                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
+            {#            <div class="col-lg-4 col-6 mb-4 shuffle-item">#}
+            {#                <div class="position-relative rounded hover-wrapper">#}
+            {#                    <img src="{% static 'images/portfolio/item-5.png' %}" alt="portfolio-image"#}
+            {#                         class="img-fluid rounded w-100">#}
+            {#                    <div class="hover-overlay">#}
+            {#                        <div class="hover-content">#}
+            {#                            <a class="btn btn-light btn-sm" href="project-single.html">view project</a>#}
+            {#                        </div>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </div>#}
         </div>
     </div>
 </section>
 <!-- /portfolio -->
 
 <!-- testimonial -->
-<section class="section bg-primary position-relative testimonial-bg-shapes">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section-title text-white mb-5">Testimonials</h2>
-            </div>
-            <div class="col-lg-10 mx-auto testimonial-slider">
-                <!-- slider-item -->
-                <div class="text-center testimonial-content">
-                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud
-                            exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in
-                        reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block"
-                         src="{% static 'images/testimonial/client-1.png' %}"
-                         alt="client-image">
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
-                </div>
-                <!-- slider-item -->
-                <div class="text-center testimonial-content">
-                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud
-                            exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in
-                        reprehenderit in
-                        voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block"
-                         src="{% static 'images/testimonial/client-1.png' %}"
-                         alt="client-image">
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
-                </div>
-                <!-- slider-item -->
-                <div class="text-center testimonial-content">
-                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>
-                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud
-                            exercitation
-                            ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in
-                        reprehenderit in
-                        voluptate velit
-                        esse cillum dolore eu fugiat nulla pariatur.</p>
-                    <img class="img-fluid rounded-circle mb-4 d-inline-block"
-                         src="{% static 'images/testimonial/client-1.png' %}"
-                         alt="client-image">
-                    <h4 class="text-white">Jesica Gomez</h4>
-                    <h6 class="text-light mb-4">CEO, Funder</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- bg shapes -->
-    <img src="{% static 'images/backgrounds/map.png' %}" alt="map" class="img-fluid bg-map">
-    <img src="{% static 'images/illustrations/dots-group-v.png' %}" alt="bg-shape" class="img-fluid bg-shape-1">
-    <img src="{% static 'images/illustrations/leaf-orange.png' %}" alt="bg-shape" class="img-fluid bg-shape-2">
-    <img src="{% static 'images/illustrations/dots-group-sm.png' %}" alt="bg-shape" class="img-fluid bg-shape-3">
-    <img src="{% static 'images/illustrations/leaf-pink-round.png' %}" alt="bg-shape" class="img-fluid bg-shape-4">
-    <img src="{% static 'images/illustrations/leaf-cyan.png' %}" alt="bg-shape" class="img-fluid bg-shape-5">
-</section>
-<!-- /testimonial -->
-
-<!-- client logo slider -->
-<section class="section pb-0">
-    <div class="container">
-        <div class="client-logo-slider d-flex align-items-center">
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-1.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-2.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-3.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-4.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-5.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-1.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-2.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-3.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-4.png' %}"
-                                                                       alt="client-logo"></a>
-            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
-                                                                       src="{% static 'images/clients-logo/client-logo-5.png' %}"
-                                                                       alt="client-logo"></a>
-        </div>
-    </div>
-</section>
-<!-- /client logo slider -->
-
-<!-- blog -->
-<section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h2 class="section-title">Blogs</h2>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <article class="card shadow">
-                    <img class="rounded card-img-top" src="{% static 'images/blog/post-3.jpg' %}" alt="post-thumb">
-                    <div class="card-body">
-                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5
-                            Million</a>
-                        </h4>
-                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <article class="card shadow">
-                    <img class="rounded card-img-top" src="{% static 'images/blog/post-4.jpg' %}" alt="post-thumb">
-                    <div class="card-body">
-                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5
-                            Million</a>
-                        </h4>
-                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                <article class="card shadow">
-                    <img class="rounded card-img-top" src="{% static 'images/blog/post-2.jpg' %}" alt="post-thumb">
-                    <div class="card-body">
-                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5
-                            Million</a>
-                        </h4>
-                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- /blog -->
+{#<section class="section bg-primary position-relative testimonial-bg-shapes">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-12 text-center">#}
+{#                <h2 class="section-title text-white mb-5">Testimonials</h2>#}
+{#            </div>#}
+{#            <div class="col-lg-10 mx-auto testimonial-slider">#}
+{#                <!-- slider-item -->#}
+{#                <div class="text-center testimonial-content">#}
+{#                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>#}
+{#                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                        tempor#}
+{#                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud#}
+{#                            exercitation#}
+{#                            ullamco laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in#}
+{#                        reprehenderit#}
+{#                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>#}
+{#                    <img class="img-fluid rounded-circle mb-4 d-inline-block"#}
+{#                         src="{% static 'images/testimonial/client-1.png' %}"#}
+{#                         alt="client-image">#}
+{#                    <h4 class="text-white">Jesica Gomez</h4>#}
+{#                    <h6 class="text-light mb-4">CEO, Funder</h6>#}
+{#                </div>#}
+{#                <!-- slider-item -->#}
+{#                <div class="text-center testimonial-content">#}
+{#                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>#}
+{#                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                        tempor#}
+{#                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud#}
+{#                            exercitation#}
+{#                            ullamco#}
+{#                            laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in#}
+{#                        reprehenderit in#}
+{#                        voluptate velit#}
+{#                        esse cillum dolore eu fugiat nulla pariatur.</p>#}
+{#                    <img class="img-fluid rounded-circle mb-4 d-inline-block"#}
+{#                         src="{% static 'images/testimonial/client-1.png' %}"#}
+{#                         alt="client-image">#}
+{#                    <h4 class="text-white">Jesica Gomez</h4>#}
+{#                    <h6 class="text-light mb-4">CEO, Funder</h6>#}
+{#                </div>#}
+{#                <!-- slider-item -->#}
+{#                <div class="text-center testimonial-content">#}
+{#                    <i class="ti-quote-right text-white icon mb-4 d-inline-block"></i>#}
+{#                    <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                        tempor#}
+{#                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <strong>quis nostrud#}
+{#                            exercitation#}
+{#                            ullamco#}
+{#                            laboris nisi ut aliquip ex ea commodo consequat.</strong> Duis aute irure dolor in#}
+{#                        reprehenderit in#}
+{#                        voluptate velit#}
+{#                        esse cillum dolore eu fugiat nulla pariatur.</p>#}
+{#                    <img class="img-fluid rounded-circle mb-4 d-inline-block"#}
+{#                         src="{% static 'images/testimonial/client-1.png' %}"#}
+{#                         alt="client-image">#}
+{#                    <h4 class="text-white">Jesica Gomez</h4>#}
+{#                    <h6 class="text-light mb-4">CEO, Funder</h6>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#    <!-- bg shapes -->#}
+{#    <img src="{% static 'images/backgrounds/map.png' %}" alt="map" class="img-fluid bg-map">#}
+{#    <img src="{% static 'images/illustrations/dots-group-v.png' %}" alt="bg-shape" class="img-fluid bg-shape-1">#}
+{#    <img src="{% static 'images/illustrations/leaf-orange.png' %}" alt="bg-shape" class="img-fluid bg-shape-2">#}
+{#    <img src="{% static 'images/illustrations/dots-group-sm.png' %}" alt="bg-shape" class="img-fluid bg-shape-3">#}
+{#    <img src="{% static 'images/illustrations/leaf-pink-round.png' %}" alt="bg-shape" class="img-fluid bg-shape-4">#}
+{#    <img src="{% static 'images/illustrations/leaf-cyan.png' %}" alt="bg-shape" class="img-fluid bg-shape-5">#}
+{#</section>#}
+{#<!-- /testimonial -->#}
+{##}
+{#<!-- client logo slider -->#}
+{#<section class="section pb-0">#}
+{#    <div class="container">#}
+{#        <div class="client-logo-slider d-flex align-items-center">#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-1.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-2.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-3.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-4.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-5.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-1.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-2.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-3.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-4.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#            <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"#}
+{#                                                                       src="{% static 'images/clients-logo/client-logo-5.png' %}"#}
+{#                                                                       alt="client-logo"></a>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<!-- /client logo slider -->#}
+{##}
+{#<!-- blog -->#}
+{#<section class="section">#}
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="col-12 text-center">#}
+{#                <h2 class="section-title">Blogs</h2>#}
+{#            </div>#}
+{#            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">#}
+{#                <article class="card shadow">#}
+{#                    <img class="rounded card-img-top" src="{% static 'images/blog/post-3.jpg' %}" alt="post-thumb">#}
+{#                    <div class="card-body">#}
+{#                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5#}
+{#                            Million</a>#}
+{#                        </h4>#}
+{#                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                            tempor#}
+{#                            incididunt ut labore et#}
+{#                            dolore magna aliqua.</p>#}
+{#                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>#}
+{#                    </div>#}
+{#                </article>#}
+{#            </div>#}
+{#            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">#}
+{#                <article class="card shadow">#}
+{#                    <img class="rounded card-img-top" src="{% static 'images/blog/post-4.jpg' %}" alt="post-thumb">#}
+{#                    <div class="card-body">#}
+{#                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5#}
+{#                            Million</a>#}
+{#                        </h4>#}
+{#                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                            tempor#}
+{#                            incididunt ut labore et#}
+{#                            dolore magna aliqua.</p>#}
+{#                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>#}
+{#                    </div>#}
+{#                </article>#}
+{#            </div>#}
+{#            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">#}
+{#                <article class="card shadow">#}
+{#                    <img class="rounded card-img-top" src="{% static 'images/blog/post-2.jpg' %}" alt="post-thumb">#}
+{#                    <div class="card-body">#}
+{#                        <h4 class="card-title"><a class="text-dark" href="blog-single.html">Amazon increase income 1.5#}
+{#                            Million</a>#}
+{#                        </h4>#}
+{#                        <p class="cars-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod#}
+{#                            tempor#}
+{#                            incididunt ut labore et#}
+{#                            dolore magna aliqua.</p>#}
+{#                        <a href="blog-single.html" class="btn btn-xs btn-primary">Read More</a>#}
+{#                    </div>#}
+{#                </article>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</section>#}
+{#<!-- /blog -->#}
 
 <!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
+<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
