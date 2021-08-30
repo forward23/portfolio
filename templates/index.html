@@ -33,7 +33,7 @@
 
 <header class="navigation fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand font-tertiary h5" href="index.html">#ILYA MOISEEV</a>
+        <a class="navbar-brand font-tertiary h5" href="#parallax">#ILYA MOISEEV</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                 aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -126,7 +126,7 @@
                     <br>
                     I also have strong knowledge in trading on the Stock Exchange and Forex. Own experience: 7 years on
                     the Moscow Exchange (stocks, futures, options) and on Forex.</p>
-                <a href="about.html" class="btn btn-transparent">know more</a>
+{#                <a href="about.html" class="btn btn-transparent">know more</a>#}
             </div>
         </div>
     </div>
@@ -620,27 +620,38 @@
 {#<!-- /blog -->#}
 
 <!-- contact -->
-<section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png" id="contact">
+<section class="section section-on-footer" data-background="{% static 'images/backgrounds/bg-dots.png' %}" id="contact">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <h2 class="section-title">Contact Info</h2>
+                {% if messages %}
+                    {% for message in messages %}
+                        <div {% if message.tags %} class="alert alert-{{ message.tags }}"
+                                                   role="alert"{% endif %}>{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
             </div>
+
             <div class="col-lg-8 mx-auto">
                 <div class="bg-white rounded text-center p-5 shadow-down">
                     <h4 class="mb-80">Contact Form</h4>
-                    <form action="#" class="row">
+                    <form method="post" class="row">
+                        {% csrf_token %}
                         <div class="col-md-6">
-                            <input type="text" id="name" name="name" placeholder="Full Name"
-                                   class="form-control px-0 mb-4">
+                            {#                            <input type="text" id="name" name="name" placeholder="Full Name"#}
+                            {#                                   class="form-control px-0 mb-4">#}
+                            {{ form.full_name }}
                         </div>
                         <div class="col-md-6">
-                            <input type="email" id="email" name="email" placeholder="Email Address"
-                                   class="form-control px-0 mb-4">
+                            {#                            <input type="email" id="email" name="email" placeholder="Email Address"#}
+                            {#                                   class="form-control px-0 mb-4">#}
+                            {{ form.email }}
                         </div>
                         <div class="col-12">
-              <textarea name="message" id="message" class="form-control px-0 mb-4"
-                        placeholder="Type Message Here"></textarea>
+                            {#              <textarea name="message" id="message" class="form-control px-0 mb-4"#}
+                            {#                        placeholder="Type Message Here"></textarea>#}
+                            {{ form.message }}
                         </div>
                         <div class="col-lg-6 col-10 mx-auto">
                             <button class="btn btn-primary w-100">send</button>
@@ -652,6 +663,7 @@
     </div>
 </section>
 <!-- /contact -->
+
 
 <!-- footer -->
 <footer class="bg-dark footer-section">
